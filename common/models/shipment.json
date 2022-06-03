@@ -1,0 +1,28 @@
+{
+  "name": "Shipment",
+  "description": "A Customer model representing our customers.",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "status": {
+      "type": "String",
+      "in": ["Picked", "Shipped"]
+    },
+    "orderItems": {
+      "type": "String",
+      "required": true
+    }
+  },
+  "hidden": [],
+  "validations": [],
+  "relations": {
+    "order": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": "orderId"
+    }
+  },
+  "acls": [],
+  "indexes": {}
+}

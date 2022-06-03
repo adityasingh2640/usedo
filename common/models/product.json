@@ -1,0 +1,37 @@
+{
+  "name": "Product",
+  "description": "A Customer model representing our customers.",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "strict": true,
+  "properties": {
+    "productId":{
+      "type":"String",
+      "required":true
+    },
+    "name":{
+      "type":"String",
+      "required":true,
+      "length":100
+    },
+    "quantity":{
+      "type":"Number",
+      "required":true
+    },
+    "reservedQuantity":{
+      "type":"Number",
+      "required":false,
+      "default":0
+    },
+    "price":{
+      "type":"String",
+      "required":true,
+      "length":100
+    }
+  },
+  "hidden": [],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "indexes": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Customer",
+  "description": "A Customer model representing our customers.",
+  "base": "User",
+  "idInjection": false,
+  "strict": true,
+  "properties": {},
+  "hidden": [],
+  "validations": [],
+  "relations": {
+    "order": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": "orderId"
+    }
+  },
+  "acls": [],
+  "indexes": {}
+}
