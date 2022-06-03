@@ -8,7 +8,7 @@ app.start = function() {
   return app.listen(function() {
     app.emit('started');
     var baseUrl = app.get('url').replace(/\/$/, '');
-    console.log('Server listening at URL', baseUrl);
+    console.log('Server listening at URL', baseUrl);//port 3000
   });
 };
 boot(app, __dirname, function(err) {
