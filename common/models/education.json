@@ -1,0 +1,38 @@
+{
+  "name": "Education",
+  "description": "A Education model representing our customers education.",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "school":{
+      "type":"String",
+      "required":true,
+      "length":50
+    },
+    "yearOfPassing":{
+      "type":"String",
+      "required":true,
+      "length":4
+    },
+    "city":{
+      "type":"String",
+      "required":true,
+      "length":20
+    },
+    "degree":{
+      "type":"String",
+      "required":true,
+      "length":50
+    },
+    "description":{
+      "type":"String",
+      "length":100
+    }
+  },
+  "hidden": [],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "indexes": {}
+}

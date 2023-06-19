@@ -2,18 +2,48 @@
   "name": "Customer",
   "description": "A Customer model representing our customers.",
   "base": "User",
-  "idInjection": false,
+  "idInjection": true,
   "strict": true,
-  "properties": {},
-  "hidden": [],
-  "validations": [],
-  "relations": {
-    "order": {
-      "type": "hasMany",
-      "model": "Order",
-      "foreignKey": "orderId"
+  "properties": {
+    "userId":{
+      "type":"String",
+      "length": 20,
+      "required": true,
+      "unique":true
+    },
+    "firstName": {
+      "type": "String",
+      "length": 20,
+      "required": true
+    },
+    "middleName": {
+      "type": "String",
+      "length": 20
+    },
+    "lastName": {
+      "type": "String",
+      "length": 20
+    },
+    "phoneCountryCode": {
+      "type": "String",
+      "length": 5
+    },
+    "phoneNumber": {
+      "type": "String",
+      "length": 30
+    },
+    "address": {
+      "type": "String",
+      "length": 100
+    },
+    "about": {
+      "type": "String",
+      "length": 500
     }
   },
+  "hidden": [],
+  "validations": [],
+  "relations": {},
   "acls": [],
   "indexes": {}
 }

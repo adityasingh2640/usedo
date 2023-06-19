@@ -32,7 +32,7 @@
     "dataSource": "db",
     "public": false
   },
-  "Product": {
+  "Customer": {
     "dataSource": "db",
     "public": true
   }

@@ -1,0 +1,26 @@
+{
+  "name": "Skills",
+  "description": "A Customer model representing our customers skills.",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "skill": {
+      "type": "String",
+      "length":50,
+      "required":true
+    },
+    "level": {
+      "type": "String",
+      "required": true,
+      "length":1,
+      "in":["1","2","3","4","5"]
+    }
+  },
+  "hidden": [],
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "indexes": {}
+}

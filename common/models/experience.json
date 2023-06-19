@@ -1,0 +1,42 @@
+{
+  "name": "Experience",
+  "description": "A Experience model representing our customers experience.",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "strict": true,
+  "properties": {
+    "jobTitle": {
+      "type": "String",
+      "required": true,
+      "length": 20
+    },
+    "employer": {
+      "type": "String",
+      "required": true,
+      "length": 50
+    },
+    "city": {
+      "type": "String",
+      "required": true,
+      "length": 50
+    },
+    "startDate": {
+      "type": "Date",
+      "required": true
+    },
+    "endDate": {
+      "type": "Date",
+      "required": true
+    },
+    "currentJob": {
+      "type": "String",
+      "required": true,
+      "in": ["Y", "N"]
+    }
+  },
+  "hidden": [],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "indexes": {}
+}
